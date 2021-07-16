@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mahasiswa" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bb4c4b88-8ede-4a92-8a51-eab319654880">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[bWF0YWt1bGlhaC5tYWhhc2lzd2EgQVMgLDEzNiw3MyxmNWE4ZDY3Zi1mMzlkLTQxYjAtYThiZC00
+ZWNkYjU0MTBlMmQ7]]>
+	</property>
+	<field name="jenisKelamin" class="java.lang.String"/>
+	<field name="namaMahasiswa" class="java.lang.String"/>
+	<field name="nim" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="51" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="31" width="100" height="30" uuid="a7971b7f-ea1a-4caa-804e-782076be3a22">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e95dbd59-215f-4154-a179-57a8e4c182b6"/>
+				</reportElement>
+				<text><![CDATA[Nama Mahasiswa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="31" width="100" height="30" uuid="484435c6-dace-4d21-a024-878baac1c617">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f27d51d5-48ac-4909-9027-d3f333ef4782"/>
+				</reportElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="30" width="100" height="30" uuid="8df0e423-be8c-429b-9a58-7bb31485afa9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7894c19a-7a2c-41b7-9984-38901e02cafe"/>
+				</reportElement>
+				<text><![CDATA[Nim]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="200" y="1" width="100" height="30" uuid="d0ff5897-7c8d-404e-82fa-0011755e7741">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e95dbd59-215f-4154-a179-57a8e4c182b6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{namaMahasiswa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="1" width="100" height="30" uuid="08bf6c0e-2fb8-4d64-a919-36e6e6ea863b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f27d51d5-48ac-4909-9027-d3f333ef4782"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{jenisKelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="1" width="100" height="30" uuid="d2c6e364-08b1-4f97-90df-f401ad7b7c49">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7894c19a-7a2c-41b7-9984-38901e02cafe"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
